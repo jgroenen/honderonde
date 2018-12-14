@@ -1,0 +1,104 @@
+body {
+margin: 0;
+padding: 0;
+background-color: #caa07a;
+background-image: url('../images/bg.jpg');
+font-family: "Comic Sans MS", "Verdana", "Arial";
+font-size: 13px;
+}
+
+#logo {
+position: absolute;
+left: 10px;
+top: 10px;
+width: 244px;
+height: 190px;
+background-image: url('../images/logo.png');
+background-repeat: no-repeat;
+}
+
+#phrase {
+position: absolute;
+left: 300px;
+top: 15px;
+width: 620px;
+height: 50px;
+overflow: hidden;
+text-align: right;
+font-size: 24px;
+color: #5a3e10;
+}
+
+#logo_hus
+{
+  position: absolute;
+  left: 945px;
+  top: 10px;
+  text-align: center;
+}
+
+#logo_hus img
+{
+  border: none;
+  margin-bottom: 5px;
+}
+
+#logo_hus a
+{
+  text-decoration: none;
+  color: black;
+  font-size: 11px;
+}
+
+#menu {
+position: absolute;
+left: 15px;
+top: 210px;
+width: 220px;
+}
+
+#content {
+position: absolute;
+left: 300px;
+top: 80px;
+width: 570px;
+height: 520px;
+padding: 25px;
+background-image: url('../images/bg_content.png');
+font-family: "Times New Roman", "Times", "Arial";
+font-size: 14px;
+text-align: justify;
+overflow-x: hidden;
+overflow-y: auto;
+}
+
+#footer {
+position: absolute;
+left: 300px;
+top: 650px;
+width: 620px;
+text-align: center;
+font-family: "Verdana", "Tahoma", "Arial";
+font-size: 10px;
+}
+
+h1 {
+font-size: 15px;
+font-weight: bold;
+color: #8b1a05;
+}
+
+
+#menu img
+{
+  border: none;
+}
+
+a {
+text-decoration: none;
+color: #8b1a05;
+}
+
+a:hover {
+text-decoration: underline;
+}
