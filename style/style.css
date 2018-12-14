@@ -17,6 +17,14 @@ background-image: url('../images/logo.png');
 background-repeat: no-repeat;
 }
 
+
+.menu-link {
+  background: url(../images/menu.png) left top no-repeat;
+  font-size: 1.8em;
+  display: block;
+  padding: 30px 40px 10px;
+}
+
 #phrase {
 position: absolute;
 left: 300px;
