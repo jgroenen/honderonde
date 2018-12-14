@@ -63,16 +63,20 @@ p {
   line-height: 1.4em;
   text-align: justify;
 }
-p.-small {
+.-small {
   font-size: 0.8em;
 }
-p.-centered {
+.-centered {
   text-align: center;
+}
+.-italic {
+  font-style: italic;
 }
 
 ul {
   list-style-type: disc;
   padding-left: 20px;
+  margin-bottom: 1em;
 }
 li {
   line-height: 1.4em;
