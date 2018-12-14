@@ -1,112 +1,88 @@
 body {
-margin: 0;
-padding: 0;
-background-color: #caa07a;
-background-image: url('../images/bg.jpg');
-font-family: "Comic Sans MS", "Verdana", "Arial";
-font-size: 13px;
+  background-color: #caa07a;
+  background-image: url('../images/bg.jpg');
+  font-family: "Comic Sans MS", "Verdana", "Arial";
+  font-size: 100%;
 }
 
-#logo {
-position: absolute;
-left: 10px;
-top: 10px;
-width: 244px;
-height: 190px;
-background-image: url('../images/logo.png');
-background-repeat: no-repeat;
+nav, #wrapper {
+  padding: 10px;
+}
+#wrapper {
+  width: 40em;
 }
 
-
-.menu-link {
-  background: url(../images/menu.png) left top no-repeat;
-  font-size: 1.8em;
+nav a {
   display: block;
-  padding: 30px 40px 10px;
+  background: url(../images/menu.png) left top no-repeat;
+  font-size: 1.4em;
+  padding: 40px 40px 10px;
+  margin: 4px 10px;
 }
 
-#phrase {
-position: absolute;
-left: 300px;
-top: 15px;
-width: 620px;
-height: 50px;
-overflow: hidden;
-text-align: right;
-font-size: 24px;
-color: #5a3e10;
+header {
+  margin: 1em;
+  text-align: right;
 }
 
-#logo_hus
-{
-  position: absolute;
-  left: 945px;
-  top: 10px;
-  text-align: center;
+header h2 {
+  font-size: 1.4em;
+  color: #5a3e10;
 }
 
-#logo_hus img
-{
-  border: none;
-  margin-bottom: 5px;
+main {
+  padding: 30px;
+  background-image: url('../images/bg_content.png');
+  font-family: "Times New Roman", "Times", "Arial";
+  font-size: 14px;
+  margin: 30px 30px 10px;
+  width: 100%;
 }
 
-#logo_hus a
-{
-  text-decoration: none;
-  color: black;
-  font-size: 11px;
-}
-
-#menu {
-position: absolute;
-left: 15px;
-top: 210px;
-width: 220px;
-}
-
-#content {
-position: absolute;
-left: 300px;
-top: 80px;
-width: 570px;
-height: 520px;
-padding: 25px;
-background-image: url('../images/bg_content.png');
-font-family: "Times New Roman", "Times", "Arial";
-font-size: 14px;
-text-align: justify;
-overflow-x: hidden;
-overflow-y: auto;
-}
-
-#footer {
-position: absolute;
-left: 300px;
-top: 650px;
-width: 620px;
-text-align: center;
-font-family: "Verdana", "Tahoma", "Arial";
-font-size: 10px;
+footer {
+  font-size: 0.8em;
+  font-family: "Verdana", "Tahoma", "Arial";
 }
 
 h1 {
-font-size: 15px;
-font-weight: bold;
-color: #8b1a05;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #8b1a05;
+  line-height: 2em;
 }
 
+.inline-image {
+  margin: 4px 16px 4px;
+}
+.inline-image.-right {
+  float: right;
+}
 
-#menu img
-{
-  border: none;
+p {
+  margin-bottom: 1em;
+  line-height: 1.4em;
+  text-align: justify;
+}
+p.-small {
+  font-size: 0.8em;
+}
+p.-centered {
+  text-align: center;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+li {
+  line-height: 1.4em;
 }
 
 a {
-text-decoration: none;
-color: #8b1a05;
+  text-decoration: none;
+  color: #8b1a05;
 }
 
 a:hover {
-text-decoration: underline;
+  text-decoration: underline;
 }

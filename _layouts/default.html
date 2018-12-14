@@ -2,29 +2,44 @@
 <html>
   <head>
   	<title>Welkom bij Honderonde | Uw hondenuitlaatservice in Rotterdam-Noord</title>
+   	<link rel="stylesheet" type="text/css" href="style/reset.css">
    	<link rel="stylesheet" type="text/css" href="style/style.css">
   </head>
 
-  <body>
-    <div id="logo"></div>
+  <body style="display: flex">
 
-    <div id="phrase">Uw hondenuitlaatservice in Rotterdam-Noord</div>
+    <nav>
 
-    <div id="menu">
-      <a class="menu-link" href="index.html">Honderonde</a>
-      <a class="menu-link" href="informatie.html">Informatie</a>
-      <a class="menu-link" href="voorwaarden.html">Voorwaarden</a>
-      <a class="menu-link" href="tarieven.html">Tarieven</a>
-      <a class="menu-link" href="contact.html">Contact</a>
-      <a class="menu-link" href="links.html">Links</a>
-    </div>
+      <img src="images/logo.png">
 
-    <div id="content">
-      {{ content }}
-    </div>
+      <div id="menu">
+        <a class="menu-link" href="index.html">Honderonde</a>
+        <a class="menu-link" href="informatie.html">Informatie</a>
+        <a class="menu-link" href="voorwaarden.html">Voorwaarden</a>
+        <a class="menu-link" href="tarieven.html">Tarieven</a>
+        <a class="menu-link" href="contact.html">Contact</a>
+        <a class="menu-link" href="links.html">Links</a>
+      </div>
 
-    <div id="footer">
-      <a href="http://www.youcontent.nl" target="_blank">Website door Youcontent | Copyright 2010 Honderonde | )0( </a>
+    </nav>
+
+    <div id="wrapper">
+
+      <header>
+        <h2>Uw hondenuitlaatservice in Rotterdam-Noord</h2>
+      </header>
+
+      <main>
+        {{ content }}
+        <div style="clear: both">&nbsp;</div>
+      </main>
+
+      <footer>
+        <p  class="-small -centered">
+          <a href="http://www.youcontent.nl" target="_blank">Website door Youcontent | Copyright 2010 Honderonde | )0( </a>
+        </p>
+      </footer>
+
     </div>
 
   </body>
