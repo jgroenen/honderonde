@@ -1,46 +1,53 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name='viewport' content='width=320,initial-scale=1,user-scalable=0'>
   	<title>Welkom bij Honderonde | Uw hondenuitlaatservice in Rotterdam-Noord en Overschie</title>
    	<link rel="stylesheet" type="text/css" href="style/reset.css">
    	<link rel="stylesheet" type="text/css" href="style/style.css">
   </head>
 
-  <body style="display: flex">
+  <body>
 
-    <nav>
-
-      <img src="images/logo.png">
-
-      <div id="menu">
-        <a class="menu-link" href="index.html">Honderonde</a>
-        <a class="menu-link" href="informatie.html">Informatie</a>
-        <a class="menu-link" href="voorwaarden.html">Voorwaarden</a>
-        <a class="menu-link" href="tarieven.html">Tarieven</a>
-        <a class="menu-link" href="contact.html">Contact</a>
-        <a class="menu-link" href="links.html">Links</a>
-      </div>
-
-    </nav>
+    <header>
+      <h1><img src="images/logo.png" alt="Honderonde"></h1>
+      <h2>Uw hondenuitlaatservice in Rotterdam-Noord en Overschie</h2>
+    </header>
 
     <div id="wrapper">
 
-      <header>
-        <h2>Uw hondenuitlaatservice in Rotterdam-Noord en Overschie</h2>
-      </header>
+      <nav>
+        <script>
+          function toggleMenu () {
+            var menu_links = document.querySelectorAll('.menu-link');
+            for (var i = 0; i < menu_links.length; ++i) {
+              menu_links[i].classList.toggle('-active');
+            }
+          }
+        </script>
+        <div id="menu">
+          <a class="menu-link -active" href="#menu" onclick="toggleMenu()" style="float: right; margin: 20px 10px">Menu</a>
+          <a class="menu-link" href="index.html">Honderonde</a>
+          <a class="menu-link" href="informatie.html">Informatie</a>
+          <a class="menu-link" href="voorwaarden.html">Voorwaarden</a>
+          <a class="menu-link" href="tarieven.html">Tarieven</a>
+          <a class="menu-link" href="contact.html">Contact</a>
+          <a class="menu-link" href="links.html">Links</a>
+        </div>
+      </nav>
 
       <main>
         {{ content }}
         <div style="clear: both">&nbsp;</div>
       </main>
 
-      <footer>
-        <p  class="-small -centered">
-          <a href="http://www.honderonde.nl">(c) 2018 Honderonde</a>
-        </p>
-      </footer>
-
     </div>
+
+    <footer>
+      <p  class="-small -centered">
+        <a href="http://www.honderonde.nl">(c) 2018 Honderonde</a>
+      </p>
+    </footer>
 
   </body>
 </html>
