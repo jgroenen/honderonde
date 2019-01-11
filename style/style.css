@@ -10,7 +10,7 @@ body {
   background: url(../images/menu.png) left top no-repeat;
   font-size: 1.4em;
   padding: 40px 40px 10px;
-  width: 40px;
+  width: 120px;
   margin: 10px auto;
 }
 .menu-link.-active {
@@ -129,7 +129,7 @@ a:hover {
   }
 
   .menu-link {
-    width: 100px;
+    width: 120px;
     display: block;
   }
   .menu-link.-active {
