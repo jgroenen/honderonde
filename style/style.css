@@ -1,47 +1,63 @@
 body {
   background-color: #caa07a;
   background-image: url('../images/bg.jpg');
-  font-family: "Comic Sans MS", "Verdana", "Arial";
   font-size: 100%;
+  line-height: 1.4em;
 }
 
-nav, #wrapper {
-  padding: 10px;
-}
-#wrapper {
-  width: 40em;
-}
-
-nav a {
-  display: block;
+.menu-link {
+  display: none;
   background: url(../images/menu.png) left top no-repeat;
   font-size: 1.4em;
   padding: 40px 40px 10px;
-  margin: 4px 10px;
+  width: 40px;
+  margin: 10px auto;
+}
+.menu-link.-active {
+  display: block;
 }
 
 header {
-  margin: 1em;
-  text-align: right;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header img {
+  margin: 20px;
+}
+
+header h1 {
+  font-family: "Comic Sans MS", "Verdana", "Arial";
+  font-size: 2.8em;
+  font-weight: 100;
 }
 
 header h2 {
-  font-size: 1.4em;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  font-weight: 100;
   color: #5a3e10;
+  margin-bottom: 20px;
+  font-family: "Comic Sans MS", "Verdana", "Arial";
 }
 
 main {
   padding: 30px;
   background-image: url('../images/bg_content.png');
   font-family: "Times New Roman", "Times", "Arial";
-  font-size: 14px;
-  margin: 30px 30px 10px;
-  width: 100%;
+  margin-bottom: 20px;
+}
+
+main h1 {
+  font-family: "Comic Sans MS", "Verdana", "Arial";
+  font-weight: 100;
 }
 
 footer {
   font-size: 0.8em;
   font-family: "Verdana", "Tahoma", "Arial";
+  margin-bottom: 20px;
 }
 
 h1 {
@@ -52,16 +68,15 @@ h1 {
 }
 
 .inline-image {
-  margin: 4px 16px 4px;
+  display: block;
+  margin: 10px auto;
 }
 .inline-image.-right {
-  float: right;
-  max-width: 400px;
+  max-width: 100%;
 }
 
 p {
   margin-bottom: 1em;
-  line-height: 1.4em;
   text-align: justify;
 }
 .-small {
@@ -90,4 +105,60 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+@media only screen and (min-width: 660px) {
+
+  #wrapper {
+    display: flex;
+    margin-left: 40px;
+  }
+
+  header {
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  header h1 {
+    margin-right: 20px;
+  }
+
+  header h1, h2 {
+    vertical-align: middle;
+    display: inline-block;
+  }
+
+  .menu-link {
+    width: 100px;
+    display: block;
+  }
+  .menu-link.-active {
+    display: none;
+  }
+
+  main {
+    margin-right: 40px;
+    width: 100%;
+    max-width: 1200px;
+  }
+
+}
+
+@media only screen and (max-width: 900px) {
+
+  header h2 {
+    max-width: 320px;
+    margin: auto;
+  }
+
+}
+
+@media only screen and (min-width: 940px) {
+
+  .inline-image.-right {
+    max-width: 400px;
+    float: right;
+    margin: 0 0 20px 20px;
+  }
+
 }
